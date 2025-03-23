@@ -15,9 +15,9 @@ const NavBar = () => {
           <span>Kim Flores</span>
         </div>
       </Link>
-      <a href="/works" className="hidden sm:flex">
+      <Link href="/works" className="hidden sm:flex">
         Works
-      </a>
+      </Link>
       <a
         target="_blank"
         className="hidden sm:flex"

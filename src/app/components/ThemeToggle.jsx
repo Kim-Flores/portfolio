@@ -25,12 +25,14 @@ const ThemeToggle = () => {
 
   return (
     <div
-      className="relative flex items-center w-16 h-8 dark:bg-slate-900 dark:text-white bg-pink300"
+      className="justify-center bg-gray-400 rounded-sm relative flex items-center w-8 h-8 dark:bg-slate-900 dark:text-white"
       onClick={() => setDarkMode(!darkMode)}
     >
-      <FontAwesomeIcon icon={faMoon} className="text-white" size="lg" />
-      <div className="absolute bg-white dark:bg-medium w-6 h-6 rounded-full shadow-md transform transition-transform duration-300"></div>
-      <FontAwesomeIcon icon={faSun} className="text-white" size="lg" />
+      {darkMode ? (
+        <FontAwesomeIcon icon={faMoon} className="text-white" size="lg" />
+      ) : (
+        <FontAwesomeIcon icon={faSun} className="text-white" size="lg" />
+      )}
     </div>
   );
 };
