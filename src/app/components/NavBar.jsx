@@ -1,11 +1,12 @@
 import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import MobileMenu from "./MobileMenu";
 
 const NavBar = () => {
   return (
-    <div className="flex sticky justify-evenly left-0 top-0 w-full bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:bg-zinc-800/30 dark:from-inherit lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
+    <div className="items-center justify-between flex sticky sm:justify-center sm:gap-8 left-0 top-0 w-full bg-gradient-to-b from-zinc-200 pb-6 pt-8 px-6 backdrop-blur-2xl dark:bg-zinc-800/30 dark:from-inherit lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
       <Link href="/">
         <div className="gap-1 flex items-center">
           <span className="hover:rotate-20">
@@ -14,15 +15,29 @@ const NavBar = () => {
           <span>Kim Flores</span>
         </div>
       </Link>
-      <Link href="/works">Works</Link>
-      <a target="_blank" href="https://www.linkedin.com/in/kflores20/">
+      <a href="/works" className="hidden sm:flex">
+        Works
+      </a>
+      <a
+        target="_blank"
+        className="hidden sm:flex"
+        href="https://www.linkedin.com/in/kflores20/"
+      >
         LinkedIn
       </a>
-      <a target="_blank" href="https://github.com/Kim-Flores">
+      <a
+        target="_blank"
+        className="hidden sm:flex"
+        href="https://github.com/Kim-Flores"
+      >
         Github
       </a>
-      <ThemeToggle />
-      <FontAwesomeIcon icon={faBars} size="lg" />
+      <div className="flex items-center sm">
+        <ThemeToggle />
+        <span className="sm:hidden">
+          <MobileMenu />
+        </span>
+      </div>
     </div>
   );
 };
