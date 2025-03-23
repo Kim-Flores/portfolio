@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import "./layout.css";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +15,14 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        {/* <div class="gradient-container">
+          <div class="gradient">
+            <div class="gradient1"></div>
+          </div>
+        </div> */}
+      </body>
     </html>
   );
 }
