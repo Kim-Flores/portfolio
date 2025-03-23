@@ -14,7 +14,7 @@ const NavBar = () => {
           <span>Kim Flores</span>
         </div>
       </Link>
-      <a href="/works">Works</a>
+      <Link href="/works">Works</Link>
       <a target="_blank" href="https://www.linkedin.com/in/kflores20/">
         LinkedIn
       </a>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { basePath } from "../../../next.config.mjs";
 
 const Works = () => {
   return (
@@ -15,7 +16,12 @@ const Works = () => {
               target="_blank"
               className="image py-3"
             >
-              <Image src="/works/yelp.png" width={400} height={400} alt="" />
+              <Image
+                src={`${basePath}/works/yelp.png`}
+                width={400}
+                height={400}
+                alt=""
+              />
             </a>
             <div className="project flex flex-col items-center text-center">
               <p>Replicated page with responsive layout</p>
@@ -44,7 +50,12 @@ const Works = () => {
               target="_blank"
               className="image py-3"
             >
-              <Image src="/works/jwli.png" width={400} height={400} alt="" />
+              <Image
+                src={`${basePath}/works/jwli.png`}
+                width={400}
+                height={400}
+                alt=""
+              />
             </a>
             <div className="project flex flex-col items-center text-center">
               <p>
@@ -79,7 +90,7 @@ const Works = () => {
               <Image
                 width={400}
                 height={400}
-                src="/works/horoscope.png"
+                src={`${basePath}works/horoscope.png`}
                 alt=""
               />
             </a>
@@ -110,7 +121,12 @@ const Works = () => {
               target="_blank"
               className="image py-3"
             >
-              <Image src="/works/RPS.png" width={400} height={400} alt="" />
+              <Image
+                src={`${basePath}/works/RPS.png`}
+                width={400}
+                height={400}
+                alt=""
+              />
             </a>
             <div className="project flex flex-col items-center text-center">
               <p>Medieval Spin on the classic Rock, Paper, Scissors game.</p>
