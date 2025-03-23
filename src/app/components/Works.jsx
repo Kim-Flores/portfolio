@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { basePath } from "../../../next.config.mjs";
 
 const Works = () => {
   return (
@@ -16,7 +15,12 @@ const Works = () => {
               target="_blank"
               className="image py-3"
             >
-              <Image src="works/yelp.png" width={400} height={400} alt="" />
+              <Image
+                src="./works/yelp.png"
+                width={400}
+                height={400}
+                alt="yelp"
+              />
             </a>
             <div className="project flex flex-col items-center text-center">
               <p>Replicated page with responsive layout</p>
@@ -45,7 +49,12 @@ const Works = () => {
               target="_blank"
               className="image py-3"
             >
-              <Image src="../works/jwli.png" width={400} height={400} alt="" />
+              <Image
+                src="./works/jwli.png"
+                width={400}
+                height={400}
+                alt="jwli"
+              />
             </a>
             <div className="project flex flex-col items-center text-center">
               <p>
@@ -81,7 +90,7 @@ const Works = () => {
                 width={400}
                 height={400}
                 src="./works/horoscope.png"
-                alt=""
+                alt="horoscope"
               />
             </a>
             <div className="project flex flex-col items-center text-center">
@@ -111,7 +120,12 @@ const Works = () => {
               target="_blank"
               className="image py-3"
             >
-              <Image src="/works/RPS.png" width={400} height={400} alt="" />
+              <Image
+                src="./works/RPS.png"
+                width={400}
+                height={400}
+                alt="rock-paper-scissors"
+              />
             </a>
             <div className="project flex flex-col items-center text-center">
               <p>Medieval Spin on the classic Rock, Paper, Scissors game.</p>
@@ -141,7 +155,7 @@ const Works = () => {
               className="image py-3"
             >
               <Image
-                src="/works/slots.png"
+                src="./works/slots.png"
                 width={400}
                 height={400}
                 alt="slots"
@@ -177,7 +191,7 @@ const Works = () => {
               className="image py-3"
             >
               <Image
-                src="/works/nasaAPI.png"
+                src="./works/nasaAPI.png"
                 width={300}
                 height={300}
                 alt="nasa-api"
@@ -211,10 +225,10 @@ const Works = () => {
               className="image py-3"
             >
               <Image
-                src="/works/matchGame.png"
+                src="./works/matchGame.png"
                 width={400}
                 height={400}
-                alt=""
+                alt="match-game"
               />
             </a>
             <div className="project flex flex-col items-center text-center">
@@ -240,11 +254,16 @@ const Works = () => {
           <div className="flex items-center flex-col">
             <p className="text-xl">Tallo</p>
             <a
-              href="https://tallo.herokuapp.com/"
+              href="https://github.com/Kim-Flores/Tallo"
               target="_blank"
               className="image py-3"
             >
-              <Image src="/works/tallo.png" width={400} height={400} alt="" />
+              <Image
+                src="./works/tallo.png"
+                width={400}
+                height={400}
+                alt="tallo"
+              />
             </a>
             <div className="project flex flex-col items-center text-center">
               <p>
