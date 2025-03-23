@@ -5,15 +5,16 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: "className",
+  darkMode: "class",
   theme: {
     extend: {
-      dark: "#202023",
-      medium: "#9739ab",
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        accent: {
+          1: "hsl(var(--color-accent1))",
+          2: "hsl(var(--color-accent2))",
+        },
+        bkg: "hsl(var(--color-bkg))",
+        content: "hsl(var(--color-content))",
       },
     },
   },
