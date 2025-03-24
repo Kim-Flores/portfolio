@@ -13,13 +13,12 @@ const MobileMenu = () => {
         <FontAwesomeIcon icon={faBars} size="lg" />
       </Menu.Trigger>
       <Menu.Portal>
-        <Menu.Positioner className="w-48 sm:hidden" sideOffset={8}>
-          <Menu.Popup className="flex flex-col gap-2 p-2 border-solid border-cyan-500 rounded-lg bg-teal-400">
-            <Menu.Arrow className="flex fill-purple-400"></Menu.Arrow>
+        <Menu.Positioner className="w-56 sm:hidden" sideOffset={8}>
+          <Menu.Popup className="flex flex-col gap-2 p-2 border-solid dark:bg-black dark:text-white rounded-lg bg-[#f2dbe1]">
             <Menu.Item className="active:underline">
               <Link href="/">About</Link>
             </Menu.Item>
-            <Menu.Item className="active:underline active:bg-pink-400">
+            <Menu.Item className="active:underline">
               <Link href="/works">Works</Link>
             </Menu.Item>
             <Menu.Item className="active:underline">
