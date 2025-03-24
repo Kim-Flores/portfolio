@@ -6,7 +6,7 @@ import MobileMenu from "./MobileMenu";
 
 const NavBar = () => {
   return (
-    <div className="items-center justify-between flex sticky sm:justify-center sm:gap-8 left-0 top-0 w-full bg-gradient-to-b from-zinc-200 pb-6 pt-8 px-6 backdrop-blur-2xl dark:bg-zinc-800/30 dark:from-inherit lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
+    <div className="items-center justify-between flex sticky sm:justify-center sm:gap-8 left-0 top-0 w-full bg-gradient-to-b from-zinc-200 pb-6 pt-8 px-6 backdrop-blur-2xl dark:bg-zinc-800/30 dark:from-inherit lg:p-4 lg:dark:bg-zinc-800/30">
       <Link href="/">
         <div className="gap-1 flex items-center">
           <span className="hover:rotate-20">
