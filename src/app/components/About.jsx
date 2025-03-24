@@ -1,11 +1,10 @@
-// import React from "react";
 import Link from "next/link";
 
 const About = () => {
   return (
     <div className="m-6 flex justify-center flex-col">
       <div className="flex p-3 justify-center">
-        <p className="p-2 bg-teal-400 border-2 border-solid border-cyan-500 rounded-lg">
+        <p className="p-2 bg-[#f2dbe1] border-[#ebc6da] dark:bg-[#0c172a] border-2 border-solid  dark:border-[#294029] content rounded-lg">
           Hello! I am a Software Engineer based in Boston :D
         </p>
       </div>
@@ -28,7 +27,7 @@ const About = () => {
       <div className="flex justify-center">
         <Link
           href="/works"
-          className="p-2 bg-pink-400 border-2 border-solid rounded border-pink-300"
+          className="p-2 bg-[#f2dbe1] border-2 border-solid rounded border-[#ebc6da] dark:bg-[#0c172a] dark:border-[#294029]"
         >
           My Portfolio
         </Link>

@@ -4,6 +4,7 @@ import React from "react";
 import { Menu } from "@base-ui-components/react/menu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 const MobileMenu = () => {
   return (
@@ -16,10 +17,10 @@ const MobileMenu = () => {
           <Menu.Popup className="flex flex-col gap-2 p-2 border-solid border-cyan-500 rounded-lg bg-teal-400">
             <Menu.Arrow className="flex fill-purple-400"></Menu.Arrow>
             <Menu.Item className="active:underline">
-              <a href="/">About</a>
+              <Link href="/">About</Link>
             </Menu.Item>
             <Menu.Item className="active:underline active:bg-pink-400">
-              <a href="/works">Works</a>
+              <Link href="/works">Works</Link>
             </Menu.Item>
             <Menu.Item className="active:underline">
               <a target="_blank" href="https://www.linkedin.com/in/kflores20/">
