@@ -4,7 +4,7 @@ const Works = () => {
   return (
     <>
       <div className="m-6 flex justify-center flex-col">
-        <div className="my-6 underline decoration-solid decoration-4 underline-offset-8 leading-5">
+        <div className="font-bold my-6 underline decoration-solid decoration-4 underline-offset-8 leading-5">
           Works
         </div>
         <div className="grid-cols-1 grid md:grid-cols-2 gap-4">
