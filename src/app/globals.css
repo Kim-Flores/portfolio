@@ -4,45 +4,24 @@
 
 @layer base {
   :root {
-    /* --color-bkg: 210deg 40% 98%; */
-    --color-bkg: 83deg 89% 54%;
-    --color-content: 217deg, 32.6%, 17.5%;
-    --color-accent1: 191deg 89% 54%;
-    --color-accent2: 292deg 89% 54%;
-    --circle-size: 80%;
-    --blending: hard-light;
+    /* off-white */
+    --color-bkg: 210deg 40% 98%; 
+    /*--color-bkg: 83deg 89% 54%;  lime */
+    --color-content: 217deg 32.6%, 17.5%; /* dark blue */
+    --color-accent1: 191deg 89% 54%; /* cyan */
+    --color-accent2: 292deg 89% 54%; /* fushia */
   }
 
-  @media (prefers-color-scheme:dark) {
-    :root {
-      --color-bkg: 217deg, 32.6%, 17.5%; 
-      --color-content: 210deg 40% 98%;
-      --color-accent1: 191deg 89% 54%;
-      --color-accent2: 292deg 89% 54%;
-    }
-  }
-  .gradient-container {
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    overflow: hidden;
-    background: linear-gradient(40deg, var(--color-bkg) 0%, var(--color-content) 100%);
-  }
-
-  .gradient {
-    width: 100%;
-    height: 100%;
-  }
-
-  .gradient1 {
-    position: absolute;
-    background: radial-gradient(circle at center, var(--color-accent1) 0%, var(--color-accent2) 50%) no-repeat;
-    mix-blend-mode: var(--blending);
-    width: var(--circle-size);
-    height: var(--circle-size);
-    top: calc(50% - var(--circle-size) / 2);
-    left: calc(50% - var(--circle-size) / 2);
-    opacity: 1;
-  }
+  .dark {
+    /* dark blue */
+    --color-bkg: 217deg 32.6%, 17.5%; 
+    /* lime */
+    /* --color-bkg: 83deg 89% 54%;  */
+    /*off-white*/
+      --color-content: 210deg 40% 98%; 
+      /* cyan */
+      --color-accent1: 191deg 89% 54%; 
+      /* fushia */
+      --color-accent2: 292deg 89% 54%; 
+    } 
 }

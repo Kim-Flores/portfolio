@@ -16,6 +16,10 @@ module.exports = {
         bkg: "hsl(var(--color-bkg))",
         content: "hsl(var(--color-content))",
       },
+      animation: {
+        "spin-slower": "spin 35s ease infinite",
+        "spin-slow": "spin 25s ease-in-out infinite reverse",
+      },
     },
   },
   plugins: [],
