@@ -1,12 +1,20 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const About = () => {
   return (
     <div className="m-6 flex justify-center flex-col">
+      <div className="flex justify-center">
+        <Image
+          className="hover:animate-pulse"
+          src="./works/spaceBunny.png"
+          alt="Womp Model"
+          width={200}
+          height={150}
+        />
+      </div>
       <div className="flex p-3 justify-center">
-        <p className="p-2 bg-white/60 dark:bg-black/50 rounded-lg">
-          Hello and welcome! :D
-        </p>
+        <p className="p-2 bg-white/60 dark:bg-black/50 rounded-lg">Hello! :D</p>
       </div>
       <div className="my-6">
         <p className="text-4xl font-bold">Kim Flores</p>
